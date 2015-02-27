@@ -1,15 +1,10 @@
-function foreach(array, callback) {
-	for (var i = 0; i < array.length; i++) {
-		callback(array[i]);
-	}
-}
-
-function sum() {
+function sum(values) {
 	var total = 0;
-	foreach(arguments, function (value) {
+	values.map(function (value) {
 		total += value;
 	});
 	return total;
 }
 
-console.log(sum(1, 2, 3));
+var numbersToSum = [1, 2, 3];
+console.log(sum(numbersToSum));
