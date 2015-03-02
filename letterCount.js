@@ -1,4 +1,4 @@
-var tracker = require('./tracker.js');
+var tracker = require('./counter.js');
 
 var letter = process.argv[2] || 'a';
 var haystack = process.argv[3] || 'this is a test sentence';
