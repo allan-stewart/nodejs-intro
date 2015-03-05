@@ -84,8 +84,9 @@ You can also specify some other location, e.g. `node weather.js "Denver, CO"`
 ### Token Creator Tests
 
 This example demonstrates unit testing using [mocha](http://mochajs.org/).
-Before you can run it, you will need to run `npm install` to get the necessary dependencies
-(which are specified in the [package.json](./package.json) file).
+You will need to run `npm install` to get the necessary dependencies
+(which are specified in the [package.json](./package.json) file)
+before this code will run correctly.
 
 Unlike the other examples, you don't call `node` to run this.
 Instead, use `npm test` to invoke mocha via the command specified in the
