@@ -18,17 +18,18 @@ It just scratches the surface; the goal is to give enough info to get someone st
 ## Running the Code Examples
 
 Before running any of the code examples, you will need to install Node.js.
-You can always get it from the [official site][http://nodejs.org],
+You can always get it from the [official site](http://nodejs.org),
 but for OS X and *nix systems, you may try using
 [nvm](https://github.com/creationix/nvm) to avoid some permission problems.
-(Avoid using `sudo npm`.)
+(If you use `sudo npm` you may have a bad day...)
 
 All of the examples are meant to be run from a command line interface (CLI) such as a bash shell.
 You should `cd` to the directory containing this README.
 
-Also, remember that these are just examples.
-They are toy scripts purposely kept very short so they can be presented via slides.
-They are not meant to be resilient to error; their purpose is to demonstrate node.js concepts. 
+**Disclaimer:**
+> The code files in this repository are just examples.
+> They are toy scripts purposely kept very short so they can be presented via slides.
+> They are not meant to be resilient to error; their purpose is to demonstrate node.js concepts. 
 
 
 ### first.js
@@ -50,16 +51,17 @@ node ~/nodejs-intro/files.js
 ### letterCount.js
 
 This script will `require` the `counter.js` file as a module.
-Run `node letterCount.js` to run it.
+Enter `node letterCount.js` to run it.
 
-This example also uses `process.argv` to take in optional parameters from the command line.
+This example also uses [process.argv](http://nodejs.org/api/process.html#process_process_argv)
+to take in optional parameters from the command line.
 The usage is like this:
 
 ```
 node letterCount.js [letter] [string-to-search]
 ```
 
-Try some of the following:
+Try the following:
 
 ```
 node letterCount.js e
@@ -71,8 +73,8 @@ node letterCount.js m "I am the very model of a modern major general."
 ### weather.js
 
 Before you run this script, you need to either run
-`npm install request` (install the `request` module explicitly)
-or `npm install` (install all dependencies specified in the `package.json` file).
+`npm install request` (install the dependency explicitly)
+or `npm install` (install all dependencies specified in the [package.json](./package.json) file).
 
 Then you can try running `node weather.js`.
 This script will make an HTTP request to the JSON REST APIs at http://api.weathermap.org
@@ -85,10 +87,11 @@ You can also specify some other location, e.g. `node weather.js "Denver, CO"`
 
 This example demonstrates unit testing using [mocha](http://mochajs.org/).
 Before you can run it, you will need to run `npm install` to get the necessary dependencies
-(which are specified in the `package.json` file).
+(which are specified in the [package.json](./package.json) file).
 
 Unlike the other examples, you don't call `node` to run this.
-Instead, use `npm test` to invoke mocha via the test script specified in the `package.json` file.
+Instead, use `npm test` to invoke mocha via the command specified in the
+[package.json](./package.json) file.
 
-Alternatively, you can run the tests using `mocha`
-if you've installed mocha globally (`npm install -g mocha`).
+Alternatively, you can run the tests via `mocha`
+if you've installed it globally (`npm install -g mocha`).
