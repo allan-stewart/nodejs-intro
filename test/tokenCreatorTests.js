@@ -1,7 +1,7 @@
 var tokenCreator = require('../tokenCreator.js');
 var assert = require('assert');
 
-describe('makeToken', function () {
+describe('tokenCreator', function () {
 	it('creates a token using aes-cmac', function () {
 		var key = new Buffer('6b334d656e2a702f322e336a34616242', 'hex');
 		var data = ['user123', '2015-03-13T05:30:00Z'];
