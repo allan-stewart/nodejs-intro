@@ -29,5 +29,6 @@
   "bugs": {
     "url": "https://github.com/allan-stewart/nodejs-intro/issues"
   },
-  "homepage": "https://github.com/allan-stewart/nodejs-intro"
+  "homepage": "https://github.com/allan-stewart/nodejs-intro",
+  "private": true
 }
