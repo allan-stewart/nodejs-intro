@@ -94,3 +94,8 @@ Instead, use `npm test` to invoke mocha via the command specified in the
 
 Alternatively, you can run the tests via `mocha`
 if you've installed it globally (`npm install -g mocha`).
+
+
+### More examples...
+
+Additional examples can be found in the [more-examples/](./more-examples/) directory.
