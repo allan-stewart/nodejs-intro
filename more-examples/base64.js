@@ -23,9 +23,9 @@ function findDecodeFlag() {
 function printUsageAndExit() {
 	console.error('Utility for doing base64 encoding and decoding.');
 	console.error();
-	console.error('Usage: node b64.js [options] <input> [<input> ...]');
+	console.error('Usage: node base64.js [options] <input> [<input> ...]');
 	console.error('Options:');
-	console.error('  -d  Decode from base64 instead of encoding.');
+	console.error('  -d  Decode from base64.');
 	process.exit(1);
 }
 
