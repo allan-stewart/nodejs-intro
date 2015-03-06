@@ -1,11 +1,11 @@
-var tracker = require('./counter.js');
+var counter = require('./counter.js');
 
 var letter = process.argv[2] || 'a';
-var haystack = process.argv[3] || 'this is a test sentence';
+var searchString = process.argv[3] || 'this is a test sentence';
 
-for (var i = 0; i < haystack.length; i++) {
-	if (haystack[i] === letter) {
-		tracker.increment();
+for (var i = 0; i < searchString.length; i++) {
+	if (searchString[i] === letter) {
+		counter.increment();
 	}
 }
-console.log('Found "%s" %d time(s) in "%s"', letter, tracker.getCount(), haystack);
+console.log('Found "%s" %d time(s) in "%s"', letter, counter.getCount(), searchString);
