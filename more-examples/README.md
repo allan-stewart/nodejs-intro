@@ -22,7 +22,7 @@ object to convert strings between ascii and base64 encoding.
 It will report its own command line usage if you run it with `node base64.js`
 
 Try `node base64.js -d dGVzdHVzZXI6cGFzc3dvcmQx` to remind yourself that
-base64 is _encoding_, not _encryption_!
+base64 is _encoding,_ not _encryption!_
 
 
 ### lineCount.js
