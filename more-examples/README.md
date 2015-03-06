@@ -22,7 +22,7 @@ object to convert strings between ascii and base64 encoding.
 It will report its own command line usage if you run it with `node base64.js`
 
 Try `node base64.js -d dGVzdHVzZXI6cGFzc3dvcmQx` to remind yourself that
-base64 is _encoding_ not _encryption_ when you are using `Basic` HTTP authentication.
+base64 is _encoding_, not _encryption_!
 
 
 ### lineCount.js
@@ -38,14 +38,14 @@ node lineCount.js [file]
 
 ### changeCase.js
 
-This script (and the `CaseStream.js` module) demonstrate more stream tricks:
+This script (and the [CaseStream.js](./CaseStream.js) module) demonstrate more stream tricks:
 piping and transforms.
 
-The `.pipe()` method of a readable stream lets you flow all the data
-to a writeable (or duplex) stream.
+The [pipe()](http://nodejs.org/api/stream.html#stream_readable_pipe_destination_options)
+method of a readable stream lets you flow all the data to a writeable (or duplex) stream.
 
-The `stream.Transform` class allows you to create a duplex stream
-which alters the data one chunk at a time.
+The [stream.Transform](http://nodejs.org/api/stream.html#stream_class_stream_transform)
+class allows you to create a duplex stream which alters the data one chunk at a time.
 This can be used to do interesting things like crypto, compression,
 data conversion, or even file parsing/reporting.
 
