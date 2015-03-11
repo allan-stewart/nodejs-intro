@@ -1,6 +1,6 @@
 function sum(values) {
 	var total = 0;
-	values.map(function (value) {
+	values.forEach(function (value) {
 		total += value;
 	});
 	return total;

@@ -3,7 +3,7 @@ var fileCount = 0;
 var dirCount = 0;
 fileSystem.readdir('.', function (error, files) {
 	if (error) return console.error(error);
-	files.map(function (file) {
+	files.forEach(function (file) {
 		var stat = fileSystem.statSync(file);
 		if (stat.isFile()) fileCount++;
 		if (stat.isDirectory()) dirCount++;
