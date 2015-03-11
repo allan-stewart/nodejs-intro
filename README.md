@@ -1,7 +1,7 @@
 # An introduction to [Node.js](http://nodejs.org/)
 
 [This presentation](https://docs.google.com/presentation/d/1lGXFIljvgNL8TK0xmTkCiovHVNxkJJ8RmmyTio8R09k/edit?usp=sharing)
-(including the exmaple code) is geared toward people who have a working knowledge of JavaScript,
+(including the example code) is geared toward people who have a working knowledge of JavaScript,
 and have little-to-no experience with Node.js.
 It just scratches the surface; the goal is to give enough info to get someone started.
 
